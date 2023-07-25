@@ -42,8 +42,10 @@ body {
 }
 
 .person-content div h1 {
-    color: transparent;
     padding: 0px 4px;
+    color: transparent;
+    position: relative;
+    width: fit-content;
     font-size: 4.5rem;
     line-height: 6rem;
     animation: written_text .5s ease forwards;
@@ -62,6 +64,29 @@ body {
     animation-delay: 3s;
 }
 
+.person-content div h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    background: var(--color-pink);
+    animation: written_text_box 1s ease;
+    animation-delay: .5s;
+}
+
+.person-content div h1:nth-child(1) span {
+    animation-delay: .5s;
+}
+
+.person-content div h1:nth-child(2) span {
+    animation-delay: 1.5s;
+}
+
+.person-content div h1:nth-child(3) span {
+    animation-delay: 2.5s;
+}
+
 @keyframes written_text {
     100% {
         color: var(--color-white);
@@ -71,5 +96,17 @@ body {
 @keyframes written_text_name {
     100% {
         color: var(--color-blue);
+    }
+}
+
+@keyframes written_text_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
     }
 }
