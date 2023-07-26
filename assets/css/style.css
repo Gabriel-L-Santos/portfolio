@@ -8,9 +8,9 @@
 
 :root {
     --color-white: #fff;
-    --color-pink: #d12f7a;
+    --color-pink: #80043e;
     --color-black: #0c0c0c;
-    --color-blue: #073fcc;
+    --color-blue: #3d6de8;
     --color-purple: #5f01ac;
 }
 
@@ -28,7 +28,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    background: red;
+    background: var(--color-purple);
 }
 
 .person-content {
