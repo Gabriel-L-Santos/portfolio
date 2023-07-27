@@ -28,7 +28,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    background: var(--color-purple);
+    background: var(--color-black);
 }
 
 .person-content {
