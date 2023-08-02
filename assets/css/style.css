@@ -97,8 +97,13 @@ body {
 
 .stacks-content h3 {
     color: var(--color-white);
-    font-size: 1.15rem;
+    font-size: 2rem;
     margin-left: 20px;
+}
+
+.stacks img {
+    width: 30px;
+    height: 30px;
 }
 
 @keyframes written_text {
