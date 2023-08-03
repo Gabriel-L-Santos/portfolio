@@ -87,23 +87,48 @@ body {
     animation-delay: 2.5s;
 }
 
+.person-name {
+    margin-top: 11rem;
+}
+
 .stacks-content {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
-    /* margin-top: 6rem; */
+    margin-top: 6rem;
 }
 
 .stacks-content h3 {
     color: var(--color-white);
-    font-size: 2rem;
+    font-size: 1.15rem;
     margin-left: 20px;
 }
 
-.stacks img {
+.stacks {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.stacks ul li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+}
+
+.stacks ul li img {
     width: 30px;
-    height: 30px;
+    height: auto;
+    transition: transform .3s ease;
+}
+
+.stacks ul li div img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 @keyframes written_text {
