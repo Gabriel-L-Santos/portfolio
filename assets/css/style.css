@@ -131,6 +131,17 @@ body {
     cursor: pointer;
 }
 
+.stacks ul li div:hover::after {
+    content: attr(data);
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    color: var(--color-white);
+}
+
 @keyframes written_text {
     100% {
         color: var(--color-white);
