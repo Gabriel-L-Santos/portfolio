@@ -143,6 +143,16 @@ body {
     color: var(--color-white);
 }
 
+.wrapper-profile-photo img {
+    width: 30px;
+    height: 30px;
+}
+
+.links img {
+    width: 30px;
+    height: 30px;
+}
+
 @keyframes written_text {
     100% {
         color: var(--color-white);
