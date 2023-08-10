@@ -149,10 +149,46 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     flex-direction: column;
     background-image: url(../img/img1.jpg);
     background-size: cover;
     background-position: top center;
+    z-index: 1;
+}
+
+.person-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .9;
+    z-index: -1;
+    background: 
+        linear-gradient(270deg, transparent 30%, var(--color-black)),
+        linear-gradient(180deg, transparent 30%, var(--color-black)),
+        linear-gradient(0deg, transparent 65%, var(--color-black));
+}
+
+.wrapper-profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    margin: 20px 15px;
+    border-radius: 50%;
+    background: 
+        radial-gradient(rgba(0,0,0,0.15) 60%, transparent 0),
+        radial-gradient(#000 68%, transparent 0),
+        linear-gradient(to top right, #ffa500 0%, #ff1493 100%);
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
 }
 
 .links img {
