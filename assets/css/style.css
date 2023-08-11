@@ -93,7 +93,6 @@ body {
 
 .stacks-content {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
     margin-top: 6rem;
@@ -191,10 +190,21 @@ body {
     border-radius: 50%;
 }
 
-.links img {
+.links a img {
     width: 30px;
     height: 30px;
+    margin: 10px;
+    filter: brightness(.8);
+    transition: all .3s ease;
 }
+
+.links a img:hover {
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+
+/* Final da primeira página */
+
 
 @keyframes written_text {
     100% {
