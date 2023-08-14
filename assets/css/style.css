@@ -205,6 +205,22 @@ body {
 
 /* Final da Primeira Página */
 
+#about {
+    height: 100vh;
+    width: 100%;
+    background: var(--color-black);
+    display: flex;
+    color: var(--color-white);
+}
+
+.background-about {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @keyframes written_text {
     100% {
