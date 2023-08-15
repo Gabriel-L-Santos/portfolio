@@ -163,7 +163,6 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: .9;
     z-index: -1;
     background: 
         linear-gradient(270deg, transparent 30%, var(--color-black)),
@@ -219,6 +218,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.img-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.img-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: 
+        linear-gradient(.25turn, transparent 30%, var(--color-black)),
+        linear-gradient(.5turn, transparent 30%, var(--color-black)),
+        linear-gradient(1turn, transparent 65%, var(--color-black));
+}
+
+.img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 
