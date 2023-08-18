@@ -245,6 +245,39 @@ body {
     object-fit: cover;
 }
 
+.box-about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 3rem;
+}
+
+.section-subtitle h2 p {
+    display: inline-block;
+    font-size: 3rem;
+}
+
+.section-subtitle h2 p:nth-child(2) span {
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: var(--color-black);
+    background: var(--color-white);
+}
+
+.box-about h3 {
+    margin: 3rem;
+    font-size: 2rem;
+}
+
+.box-about h3 p {
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: var(--color-black);
+    background: var(--color-pink);
+}
+
 
 @keyframes written_text {
     100% {
