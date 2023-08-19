@@ -272,10 +272,48 @@ body {
 
 .box-about h3 p {
     display: inline-block;
+    width: fit-content;
     padding: 2px 4px;
     border-radius: 4px;
     color: var(--color-black);
     background: var(--color-pink);
+}
+
+.box-about h4 {
+    margin: 1rem 3rem;
+    font-size: 1.5rem;
+}
+
+.box-about h4 p {
+    display: inline;
+    padding: 2px 4px;
+    color: var(--color-blue);
+    font-size: bold;
+    font-weight: 1.75rem;
+}
+
+.button-cta {
+    display: flex;
+    max-width: 190px;
+    margin: 4rem 3rem;
+}
+
+.button-cta button {
+    display: inline-block;
+    width: 100%;
+    max-width: 172px;
+    padding: 10px;
+    margin-bottom: 3rem;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    letter-spacing: .10rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-cta button:hover {
+    transition: all .3s ease;
+    filter: brightness(.8);
 }
 
 
