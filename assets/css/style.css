@@ -317,7 +317,31 @@ body {
     filter: brightness(.8);
 }
 
-/* Final da Sobre/About */
+/* Final do About */
+
+#projects {
+    height: 100vh;
+    width: 100%;
+    background: var(--color-black);
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-title h2 {
+    margin: 3rem;
+    padding: 1rem;
+    font-size: 3rem;
+    color: var(--color-white);
+}
+
+.wrapper-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 500px;
+    margin-top: 2rem;
+}
 
 
 @keyframes written_text {
