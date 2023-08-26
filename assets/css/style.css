@@ -441,6 +441,11 @@ body {
 
 /* Final do Projects */
 
+#contacts {
+    background: black;
+    color: #fff;
+}
+
 
 @keyframes written_text {
     100% {
