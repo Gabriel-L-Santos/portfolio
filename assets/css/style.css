@@ -442,8 +442,68 @@ body {
 /* Final do Projects */
 
 #contacts {
-    background: black;
-    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    background: var(--color-black);
+
+    color: var(--color-white);
+}
+
+.contact-icon-content h2 {
+    margin: 3rem 3rem 3rem 0rem;
+    padding: 1rem 1rem 1rem 0rem;
+    font-size: 3rem;
+    color: var(--color-white);
+}
+
+.contact-icons-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contact-icon-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0rem 3rem;
+    padding: 1rem;
+}
+
+.contact-icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    background: var(--color-white);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.contact-icon i {
+    font-size: 2rem;
+    color: var(--color-blue);
+}
+
+.contact-info span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact-info a {
+    display: block;
+    margin: .25rem 0rem;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.contact-info a:hover {
+    transition: color .3s ease;
+    color: var(--color-blue);
 }
 
 
