@@ -506,6 +506,8 @@ body {
     color: var(--color-blue);
 }
 
+/* Final do Contacts */
+
 
 @keyframes written_text {
     100% {
@@ -530,3 +532,5 @@ body {
         left: 100%;
     }
 }
+
+/* Final do Animations */
