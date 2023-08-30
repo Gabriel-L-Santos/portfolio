@@ -30,7 +30,7 @@ body {
     width: 100%;
     padding: 15px 30px;
     position: fixed;
-    background: red;
+    background: 'transparent';
     z-index: 2;
 }
 
@@ -46,6 +46,28 @@ body {
 
 .header-title h1:hover {
     opacity: .8;
+}
+
+.navbar {
+    max-width: 350px;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 /* Final do Header */
