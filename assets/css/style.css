@@ -23,6 +23,8 @@ body {
     font-family: 'Play', sans-serif;
 }
 
+/* Final das Configurações Globais */
+
 #header {
     display: flex;
     justify-content: space-between;
@@ -557,6 +559,25 @@ body {
 
 /* Final do Contacts */
 
+#footer {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    background: #191919;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-white);
+}
+
+/* Final do Footer */
 
 @keyframes written_text {
     100% {
