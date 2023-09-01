@@ -456,14 +456,14 @@ body {
 .content-project span {
     color: var(--color-black);
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     margin: .75rem auto .5rem auto;
 }
 
 .content-project p {
     color: #3d3d4b;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin: 0rem .75rem;
     text-align: center;
 }
@@ -479,15 +479,18 @@ body {
 .cta-project a {
     padding: 5px 16px;
     font-size: 1.25rem;
+    font-weight: bold;
     color: var(--color-white);
     background: var(--color-purple);
     border-radius: 10px;
     text-decoration: none;
-    transition: opacity .3s ease;
+    transition: transform .3s ease;
 }
 
 .cta-project a:hover {
     opacity: .7;
+    transition: opacity .3s ease;
+    transform: scale(1.1);
 }
 
 /* Final do Projects */
@@ -541,12 +544,13 @@ body {
 }
 
 .contact-info span {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
 .contact-info a {
     display: block;
+    font-size: 1.2rem;
     margin: .25rem 0rem;
     text-decoration: none;
     color: var(--color-white);
