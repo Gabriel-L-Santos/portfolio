@@ -70,6 +70,11 @@ body {
     color: var(--color-white);
     font-size: 1.4rem;
     font-weight: 700;
+    transition: opacity .3s ease;
+}
+
+.navbar ul li a:hover {
+    opacity: .8;
 }
 
 /* Final do Header */
@@ -484,13 +489,11 @@ body {
     background: var(--color-purple);
     border-radius: 10px;
     text-decoration: none;
-    transition: transform .3s ease;
+    transition: opacity .3s ease;
 }
 
 .cta-project a:hover {
     opacity: .7;
-    transition: opacity .3s ease;
-    transform: scale(1.1);
 }
 
 /* Final do Projects */
@@ -579,6 +582,14 @@ body {
     align-items: center;
     flex-direction: column;
     color: var(--color-white);
+}
+
+.container-footer h2 {
+    font-size: 1.7rem;
+}
+
+.container-footer h3 {
+    font-size: 1.2rem;
 }
 
 /* Final do Footer */
