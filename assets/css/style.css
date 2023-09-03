@@ -33,6 +33,7 @@ body {
     padding: 15px 30px;
     position: fixed;
     background: 'transparent';
+    transition: all .3s ease-out;
     z-index: 2;
 }
 
@@ -355,8 +356,13 @@ body {
     margin: 4rem 3rem;
 }
 
-.button-cta button {
+.button-cta a {
     display: inline-block;
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: 1.6rem;
+    background: var(--color-white);
+    text-align: center;
     width: 100%;
     max-width: 172px;
     padding: 10px;
@@ -368,7 +374,7 @@ body {
     cursor: pointer;
 }
 
-.button-cta button:hover {
+.button-cta a:hover {
     transition: all .3s ease;
     filter: brightness(.8);
 }
@@ -390,26 +396,56 @@ body {
     color: var(--color-white);
 }
 
-.wrapper-projects {
+/* .wrapper-projects {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    flex-direction: row;
+    height: 500px;
+    margin-top: 2rem;
+} */
+
+.container-projects {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    height: 100%;
+    width: 100%;
+    max-width: 1020px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     flex-direction: row;
     height: 500px;
     margin-top: 2rem;
 }
 
 .card-project {
-    width: 320px;
-    height: 450px;
+    /* width: 320px; */
+    /* height: 450px; */
+
+    height: 100%;
+    width: 100%;
+
     padding: 30px 20px 20px;
-    margin: 0px 10px;
+    /* margin: 0px 10px; */
+
     position: relative;
     background: var(--color-white);
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
+
+    z-index: 1;
 }
 
 .card-project::after {
@@ -421,19 +457,25 @@ body {
     width: 100%;
     background: var(--color-purple);
     border-radius: 20px 20px 0px 0px;
+
+    z-index: -1;
 }
 
-.content-project {
+/* .content-project {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     z-index: 1;
-}
+} */
 
 .image-project {
-    height: 240px;
-    width: 250px;
+    max-height: 240px;
+    max-width: 250px;
+
+    height: 100%;
+    width: 100%;
+
     position: relative;
     overflow: hidden;
     border-radius: 30px;
@@ -458,14 +500,14 @@ body {
     transform: scale(1.1);
 }
 
-.content-project span {
+.card-project span {
     color: var(--color-black);
     font-weight: bold;
     font-size: 1.8rem;
     margin: .75rem auto .5rem auto;
 }
 
-.content-project p {
+.card-project p {
     color: #3d3d4b;
     font-weight: bold;
     font-size: 1.3rem;
