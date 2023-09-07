@@ -17,6 +17,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 10px;
+    background: var(--color-black);
 }
 
 body {
@@ -146,6 +147,7 @@ body {
 
 .person-name {
     margin-top: 11rem;
+    padding: 0px 20px;
 }
 
 .stacks-content {
@@ -153,6 +155,7 @@ body {
     justify-content: center;
     flex-direction: column;
     margin-top: 6rem;
+    padding: 0px 20px;
 }
 
 .stacks-content h3 {
@@ -164,10 +167,13 @@ body {
 .stacks {
     display: flex;
     align-items: center;
+
+    flex-wrap: wrap;
+    
     flex-direction: row;
 }
 
-.stacks ul li {
+.stacks li {
     display: flex;
     align-items: center;
     position: relative;
@@ -176,18 +182,18 @@ body {
     list-style: none;
 }
 
-.stacks ul li img {
+.stacks li img {
     width: 30px;
     height: auto;
     transition: transform .3s ease;
 }
 
-.stacks ul li div img:hover {
+.stacks li div img:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
 
-.stacks ul li div:hover::after {
+.stacks li div:hover::after {
     content: attr(data);
     position: absolute;
     text-align: center;
