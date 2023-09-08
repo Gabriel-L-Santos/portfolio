@@ -104,8 +104,8 @@ body {
     color: transparent;
     position: relative;
     width: fit-content;
-    font-size: 4.5rem;
-    line-height: 6rem;
+    font-size: calc(2vw + 1.5rem);
+    line-height: calc(3vw + 1.8rem);
     animation: written_text .5s ease forwards;
 }
 
@@ -153,8 +153,10 @@ body {
 .stacks-content {
     display: flex;
     justify-content: center;
+
+    margin: 5rem 0rem 2rem;
     flex-direction: column;
-    margin-top: 6rem;
+
     padding: 0px 20px;
 }
 
