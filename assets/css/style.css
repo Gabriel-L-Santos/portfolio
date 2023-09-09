@@ -162,7 +162,7 @@ body {
 
 .stacks-content h3 {
     color: var(--color-white);
-    font-size: 1.8rem;
+    font-size: calc(.85vw + .5rem);
     margin-left: 20px;
 }
 
@@ -185,7 +185,7 @@ body {
 }
 
 .stacks li img {
-    width: 30px;
+    width: 30px; /*OBS: apagar o stacks li img do mobile, e substituir este por - "width: calc(3.5vw + 0.5rem);"*/
     height: auto;
     transition: transform .3s ease;
 }
@@ -205,6 +205,29 @@ body {
     width: 30px;
     height: 20px;
     color: var(--color-white);
+}
+
+/* mobile */
+@media (max-width: 376px){
+    .stacks-content {
+        padding: 0px 10px;
+    }
+
+    .stacks-content h3 {
+        margin-left: 10px;
+    }
+
+    .stacks {
+        margin-top: 10px;
+    }
+
+    .stacks li {
+        margin: 0px;
+    }
+
+    .stacks li img {
+        width: calc(3.5vw + 0.5rem);
+    }
 }
 
 .person-background {
