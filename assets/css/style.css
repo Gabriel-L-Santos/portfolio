@@ -207,7 +207,7 @@ body {
     font-size: 1.25vh;
 }
 
-/* small - person */
+/* small screen - person */
 
 @media (max-width: 376px){
     .person-name {
@@ -235,7 +235,7 @@ body {
     }
 }
 
-/* medium - person */
+/* medium screen - person */
 
 @media (min-width: 377px) and (max-width: 768px){
     .person-name {
@@ -262,6 +262,8 @@ body {
         width: calc(3.2vw + .5rem);
     }
 }
+
+/* landscape mode - person */
 
 @media (max-width: 1000px) and (orientation: landscape) {
     .stacks li div:hover::after {
