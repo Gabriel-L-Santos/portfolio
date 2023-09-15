@@ -325,17 +325,23 @@ body {
 }
 
 .links a img {
-    width: 20px;
-    height: 20px;
+    width: calc(2vw + 0.8rem);
+    height: calc(2vw + 0.8rem);
     margin: calc(0.8vw + 0.8rem);
-
     filter: brightness(.8);
     transition: all .3s ease;
 }
 
 .links a img:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
     filter: brightness(1);
+}
+
+@media (max-width: 767px) {
+    .links a img {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 /* Final do Person */
