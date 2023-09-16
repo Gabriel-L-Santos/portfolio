@@ -327,6 +327,7 @@ body {
 .links a img {
     width: calc(2vw + 0.8rem);
     height: calc(2vw + 0.8rem);
+
     margin: calc(0.8vw + 0.8rem);
     filter: brightness(.8);
     transition: all .3s ease;
@@ -341,6 +342,19 @@ body {
     .links a img {
         width: 20px;
         height: 20px;
+    }
+}
+
+@media (max-width: 1440px) and (orientation: landscape) {
+    .profile-photo {
+        width: 45vh;
+    }
+}
+
+@media (min-width: 1440px) {
+    .profile-photo {
+        width: 25vw;
+        max-width: initial;
     }
 }
 
