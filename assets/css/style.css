@@ -361,7 +361,7 @@ body {
 /* Final do Person */
 
 #about {
-    height: 100vh;
+    height: auto;
     width: 100%;
     background: var(--color-black);
     display: flex;
@@ -370,7 +370,8 @@ body {
 
 .background-about {
     width: 50%;
-    height: 100%;
+    height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,13 +406,16 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+
     width: 50%;
+
     padding: 3rem;
+    margin: 6rem 0rem;
 }
 
 .section-subtitle h2 p {
     display: inline-block;
-    font-size: 3rem;
+    font-size: calc(1.4vw + 1.2rem);
 }
 
 .section-subtitle h2 p:nth-child(2) span {
@@ -423,7 +427,7 @@ body {
 
 .box-about h3 {
     margin: 3rem;
-    font-size: 2rem;
+    font-size: calc(.8vw + .8rem);
 }
 
 .box-about h3 p {
@@ -438,37 +442,38 @@ body {
 
 .box-about h4 {
     margin: 1rem 3rem;
-    font-size: 1.6rem;
+    font-size: calc(.8vw + .5rem);
 }
 
 .box-about h4 p {
     display: inline;
     padding: 2px 4px;
+
     color: var(--color-blue);
-    font-size: bold;
-    font-weight: 1.8rem;
 }
 
 .button-cta {
     display: flex;
+
     max-width: 190px;
     margin: 4rem 3rem;
 }
 
 .button-cta a {
     display: inline-block;
-    text-decoration: none;
-    color: var(--color-black);
-    font-size: 1.6rem;
-    background: var(--color-white);
-    text-align: center;
-    width: 100%;
-    max-width: 172px;
-    padding: 10px;
+
+    padding: calc(0.2vw + 0.8rem) calc(2vw + 0.8rem);
     margin-bottom: 3rem;
+
+    font-size: calc(.7vw + .55rem);
     font-family: 'Play', sans-serif;
     font-weight: 700;
-    letter-spacing: .10rem;
+    letter-spacing: .15rem;
+    color: var(--color-black);
+    background: var(--color-white);
+    text-align: center;
+    text-decoration: none;
+
     border-radius: 10px;
     cursor: pointer;
 }
@@ -476,6 +481,24 @@ body {
 .button-cta a:hover {
     transition: all .3s ease;
     filter: brightness(.8);
+}
+
+@media (max-width: 376px) {
+    .box-about {
+        padding: 1rem;
+    }
+
+    .section-subtitle p {
+        font-size: 2rem;
+    }
+
+    .box-about h3 {
+        margin: 2rem 1rem;
+    }
+
+    .box-about h4 {
+        margin: 1rem;
+    }
 }
 
 /* Final do About */
