@@ -679,8 +679,12 @@ body {
 #contacts {
     display: flex;
     flex-direction: column;
+
     height: 40vh;
     width: 100%;
+
+    margin: 3vw 0vw 5vw;
+    
     background: var(--color-black);
 
     color: var(--color-white);
@@ -689,6 +693,7 @@ body {
 .contact-icon-content h2 {
     margin: 3rem 3rem 3rem 0rem;
     padding: 1rem 1rem 1rem 0rem;
+
     font-size: 3rem;
     color: var(--color-white);
 }
@@ -697,6 +702,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .contact-icon-content {
@@ -742,15 +748,47 @@ body {
     color: var(--color-blue);
 }
 
+@media (min-width: 1840px) {
+    .contact-icon-content h2 {
+        font-size: calc(1.4vw + 1.8rem);
+    }
+
+    .contact-icon {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .contact-icon i {
+        font-size: 1vw;
+    }
+
+    .contact-info span {
+        font-size: 1.1vw;
+    }
+
+    .contact-info p {
+        font-size: .7vw;
+    }
+
+    .contact-info a {
+        font-size: .7vw;
+    }
+}
+
 /* Final do Contacts */
 
 #footer {
-    height: 15vh;
+    height: auto;
     width: 100%;
+
+    padding: calc(3vw + 1rem) 0vw;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     margin-top: auto;
+
     background: #191919;
 }
 
@@ -768,6 +806,16 @@ body {
 
 .container-footer h3 {
     font-size: 1.2rem;
+}
+
+@media (min-width: 1840px) {
+    .container-footer h2 {
+        font-size: calc(1vw + .2rem);
+    }
+
+    .container-footer h3 {
+        font-size: .8vw;
+    }
 }
 
 /* Final do Footer */
