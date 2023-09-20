@@ -542,16 +542,18 @@ body {
 /* Final do About */
 
 #projects {
-    height: 100vh;
+    height: auto;
     width: 100%;
     background: var(--color-black);
+
     display: flex;
     flex-direction: column;
 }
 
 .projects-title h2 {
-    margin: 3rem;
+    margin-top: 60px;
     padding: 1rem;
+
     font-size: 3rem;
     color: var(--color-white);
 }
@@ -565,17 +567,17 @@ body {
 }
 
 .swiper {
-    height: 100%;
+    height: 500px;
     width: 100%;
-    max-width: 1040px;
+    max-width: 1020px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
     flex-direction: row;
-    height: 500px;
+
     margin-top: 2rem;
+    padding: 0px 20px;
 }
 
 .card-project {
@@ -672,6 +674,18 @@ body {
 
 .cta-project a:hover {
     opacity: .7;
+}
+
+@media (max-width: 1000px) {
+    .swiper {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 700px) {
+    .swiper {
+        max-width: 350px;
+    }
 }
 
 /* Final do Projects */
