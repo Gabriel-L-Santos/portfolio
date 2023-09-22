@@ -338,6 +338,8 @@ body {
     filter: brightness(1);
 }
 
+/* small to medium screen - links person */
+
 @media (max-width: 767px) {
     .links a img {
         width: 20px;
@@ -345,11 +347,15 @@ body {
     }
 }
 
+/* landscape mode - profile photo */
+
 @media (max-width: 1440px) and (orientation: landscape) {
     .profile-photo {
         width: 45vh;
     }
 }
+
+/* large screen - profile photo */
 
 @media (min-width: 1440px) {
     .profile-photo {
@@ -483,7 +489,7 @@ body {
     filter: brightness(.8);
 }
 
-/* mobile about */
+/* small screen - about */
 
 @media (max-width: 376px) {
     .box-about {
@@ -503,6 +509,8 @@ body {
     }
 }
 
+/* small to medium screen - about */
+
 @media (min-width: 376px) and (max-width: 768px) {
     .box-about {
         padding: 1.3rem;
@@ -520,6 +528,8 @@ body {
         margin: 1.5rem;
     }
 }
+
+/* medium to large screen - about */
 
 @media (min-width: 768px) and (max-width: 1440px) {
     .box-about {
@@ -676,11 +686,15 @@ body {
     opacity: .7;
 }
 
+/* medium to large screen - swiper */
+
 @media (max-width: 1000px) {
     .swiper {
         max-width: 700px;
     }
 }
+
+/* small to medium screen - swiper */
 
 @media (max-width: 700px) {
     .swiper {
@@ -762,6 +776,8 @@ body {
     color: var(--color-blue);
 }
 
+/* large to 4k screen - contacts */
+
 @media (min-width: 1840px) {
     .contact-icon-content h2 {
         font-size: calc(1.4vw + 1.8rem);
@@ -821,6 +837,8 @@ body {
 .container-footer h3 {
     font-size: 1.2rem;
 }
+
+/* large to 4k screen - footer */
 
 @media (min-width: 1840px) {
     .container-footer h2 {
