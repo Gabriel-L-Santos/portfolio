@@ -686,6 +686,18 @@ body {
     opacity: .7;
 }
 
+/* small screen - swiper slide */
+
+@media (max-width: 375px) {
+    .swiper-slide span {
+        font-size: 1.5rem;
+    }
+
+    .swiper-slide p {
+        font-size: 1rem;
+    }
+}
+
 /* medium to large screen - swiper */
 
 @media (max-width: 1000px) {
