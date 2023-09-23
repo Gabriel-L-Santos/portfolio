@@ -714,13 +714,49 @@ body {
     }
 }
 
+/* large to 4k screen - swiper */
+
+@media (min-width: 1840px) {
+    .projects-title h2 {
+        font-size: calc(1.4vw + 1.8rem);
+    }
+
+    .swiper {
+        max-width: calc(30vw + 15rem + 30%);
+        height: calc(19vw + 22.5rem);
+    }
+
+    .image-project {
+        max-width: calc(10vw + 11rem);
+        max-height: calc(10vw + 10rem);
+    }
+
+    .card-project span {
+        font-size: calc(1vw + .25rem);
+        margin: 0.5vw auto 0.5vw;
+    }
+
+    .card-project p {
+        font-size: calc(.7vw + .2rem);
+    }
+
+    .cta-project {
+        width: auto;
+    }
+
+    .cta-project a {
+        padding: 1rem 2rem;
+        font-size: 0.8vw;
+        margin-right: 1vw;
+    }
+}
+
 /* Final do Projects */
 
 #contacts {
     display: flex;
     flex-direction: column;
 
-    height: 40vh;
     width: 100%;
 
     margin: 3vw 0vw 5vw;
