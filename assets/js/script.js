@@ -1,3 +1,17 @@
+const menuHamburguer = document.querySelector('.menu-hamburguer');
+const nav = document.querySelector('.navbar');
+const links = document.querySelectorAll('.navbar-links li a');
+
+menuHamburguer.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+
+links.forEach(item => {
+    item.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+});
+
 // Initialize Swiper
 
 let swiper = createSwiper(".mySwiper", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev");

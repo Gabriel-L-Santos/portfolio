@@ -57,17 +57,20 @@ body {
     width: 100%;
 }
 
-.navbar ul {
+.navbar-links {
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    width: 100%;
 }
 
-.navbar ul li {
+.navbar-links li {
     list-style: none;
+    transition: all .2s ease-in-out;
 }
 
-.navbar ul li a {
+.navbar-links li a {
     text-decoration: none;
     color: var(--color-white);
     font-size: 1.4rem;
@@ -75,8 +78,106 @@ body {
     transition: opacity .3s ease;
 }
 
-.navbar ul li a:hover {
+.navbar-links li a:hover {
     opacity: .8;
+}
+
+.menu-hamburguer {
+    display: none;
+}
+
+@media (max-width: 560px) {
+    .navbar {
+        display: flex;
+        justify-content: end;
+    }
+    
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+
+        width: 50%;
+        height: 100vh;
+
+        position: fixed;
+        right: 0;
+        top: 0;
+        background: #333;
+        clip-path: circle(100px at 90% -20%);
+
+        pointer-events: none;
+        transition: .6s ease-out;
+    }
+
+    .menu-hamburguer {
+        display: block;
+
+        padding: 0;
+        margin-bottom: .4rem;
+        border: none;
+        border-top: 3px solid var(--color-white);
+
+        background: transparent;
+        transition: all .3s ease-in-out;
+
+        z-index: 1;
+    }
+
+    .menu-hamburguer:hover {
+        opacity: .8;
+        cursor: pointer;
+    }
+
+    .menu-hamburguer::before,
+    .menu-hamburguer::after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 3px;
+
+        margin-top: .6rem;
+
+        background: var(--color-white);
+    }
+
+    /* ATIVO */
+
+    .navbar.active .navbar-links {
+        clip-path: circle(1400px at 90% -18%);
+        pointer-events: all;
+    }
+
+    .navbar.active .menu-hamburguer {
+        border-top-color: transparent;
+    }
+
+    .navbar.active .menu-hamburguer::before {
+        transition: all .2s ease-in-out;
+        transform: rotate(-45deg) translate(-2px, -1px);
+    }
+
+    .navbar.active .menu-hamburguer::after {
+        transition: all .2s ease-in-out;
+        transform: rotate(45deg) translate(-7px, -5px);
+    }
+}
+
+@media (min-width: 1840px) {
+    .header-title h1 {
+        font-size: calc(1vw + .8rem);
+    }
+
+    .navbar {
+        max-width: 25vw;
+    }
+
+    .navbar-links li {
+        margin: 1rem;
+    }
+
+    .navbar-links li a {
+        font-size: calc(1vw + .3rem);
+    }
 }
 
 /* Final do Header */
