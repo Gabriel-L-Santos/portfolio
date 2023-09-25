@@ -1,3 +1,5 @@
+// Menu Hamburguer
+
 const menuHamburguer = document.querySelector('.menu-hamburguer');
 const nav = document.querySelector('.navbar');
 const links = document.querySelectorAll('.navbar-links li a');

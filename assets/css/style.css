@@ -86,6 +86,8 @@ body {
     display: none;
 }
 
+/* small screen - menu hamburguer */
+
 @media (max-width: 560px) {
     .navbar {
         display: flex;
@@ -140,7 +142,7 @@ body {
         background: var(--color-white);
     }
 
-    /* ATIVO */
+    /* menu hamburguer ATIVO */
 
     .navbar.active .navbar-links {
         clip-path: circle(1400px at 90% -18%);
@@ -161,6 +163,8 @@ body {
         transform: rotate(45deg) translate(-7px, -5px);
     }
 }
+
+/* large screen to 4k screen - header */
 
 @media (min-width: 1840px) {
     .header-title h1 {
