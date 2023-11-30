@@ -589,6 +589,8 @@ body {
 
     border-radius: 10px;
     cursor: pointer;
+
+    margin: 0 1rem;
 }
 
 .button-cta a:hover {
